@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  "미유 미니 spec 및 개발을 위한 환경 설정"
 ---
 
