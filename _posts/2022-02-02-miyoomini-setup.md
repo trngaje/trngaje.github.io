@@ -48,7 +48,7 @@ configure 로 Makefile을 생성할 수 있는 경우에는 아래와 같이 설
 
     file <생성된 파일>
     readelf -d <생성된 파일>
-
+ 
 ### miyoo mini 관련 홈페이지
 
 [미유미니관련홈페이지](https://github.com/TriForceX/MiyooCFW/wiki/Miyoo-Mini)
