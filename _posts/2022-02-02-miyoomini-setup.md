@@ -20,7 +20,7 @@ title:  "미유 미니 spec 및 개발을 위한 환경 설정"
 아래와 같이 도커 컨테이너를 생성하여 독립된 작업환경을 구성합니다.
 
     git clone https://github.com/shauninman/union-miyoomini-toolchain
-    sodo make shell
+    sudo make shell
 
 ### docker 기반에서 빌드시 주의사항
 
