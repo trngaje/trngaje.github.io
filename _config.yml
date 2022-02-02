@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko"
-title                    : "분석실"
+title                    : "RARoom (Retro Analysis room)"
 title_separator          : "-"
 subtitle                 : 분석실
 name                     : "trngaje"
