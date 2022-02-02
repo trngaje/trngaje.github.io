@@ -27,11 +27,13 @@ title:  "미유 미니 spec 및 개발을 위한 환경 설정"
 - 패키지 설치전에 한상 repository를 update 해준다.
 - 반복해서 필요한 패키지는 Dockerfile 을 업데이트 해준다.
 
+
     apt update
     apt install git
 
 - 빌드시 gcc 등의 경로를 arm compiler로 변경해 준다.
 Makefile 내용을 아래와 같이 변경해 준다.
+
 
     TOOLCHAIN =arm-linux-gnueabihf-
     CC          = $(TOOLCHAIN)gcc
@@ -43,6 +45,7 @@ configure 로 Makefile을 생성할 수 있는 경우에는 아래와 같이 설
     ./configure --host=arm-linux-gnueabihf
     
 - build 후 생성된 파일이 arm 용인지 확인 할 것 (개별 설정을 하지 않으면 x86 format으로 생성이 됩니다.)
+
 
     file <생성된 파일>
     readelf -d <생성된 파일>
