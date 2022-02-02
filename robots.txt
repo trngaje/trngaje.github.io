@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://trngaje.github.io/sitemap.xml
+Sitemap: https://trngaje.github.io/sitemap.xml
