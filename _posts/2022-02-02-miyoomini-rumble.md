@@ -61,7 +61,7 @@ src/platform/libretro/libretro.c:
     system("echo out > /sys/class/gpio/gpio48/direction");	
     system("echo 0 > /sys/class/gpio/gpio48/value");	
 
-진동 멈추를 멈출 때
+진동 모터를 멈출 때
 
     system("echo 1 > /sys/class/gpio/gpio48/value");	
     system("echo 48 > /sys/class/gpio/unexport");	
