@@ -18,15 +18,15 @@ title:  "port게임 zelda picross 한글 버젼 적용"
 
 - SDL2.0 환경 (ogs,oga,rk2020)
 
-    git clone -b sdl2_kor https://github.com/trngaje/zeldapicross_sdl2.git
-    make -f Makefile.ogs
+        git clone -b sdl2_kor https://github.com/trngaje/zeldapicross_sdl2.git
+        make -f Makefile.ogs
 
 data 폴더랑 Zelda-Picross 을 같이 복사해 넣으면 됨
 
 - SDL1.2 환경 (미유 미니)
 
-    git update
-    apt install libsdl-gfx1.2-dev:armhf libsdl1.2-dev:armhf libsdl-image1.2-dev:armhf libsdl-mixer1.2-dev:armhf
+        git update
+        apt install libsdl-gfx1.2-dev:armhf libsdl1.2-dev:armhf libsdl-image1.2-dev:armhf libsdl-mixer1.2-dev:armhf
     	
 (miyoo mini source 업데이트 후에 빌드 방법 추후 기술 예정)
 
