@@ -27,8 +27,9 @@ data 폴더랑 Zelda-Picross 을 같이 복사해 넣으면 됨
 
         git update
         apt install libsdl-gfx1.2-dev:armhf libsdl1.2-dev:armhf libsdl-image1.2-dev:armhf libsdl-mixer1.2-dev:armhf
-    	
-(miyoo mini source 업데이트 후에 빌드 방법 추후 기술 예정)
+        git clone -b sdl2_kor https://github.com/trngaje/zeldapicross_sdl2.git
+        make -f Makefile.miyoomini    	
+
 
 
 ### 조이스틱 키값 키보드 메세지로 매핑
