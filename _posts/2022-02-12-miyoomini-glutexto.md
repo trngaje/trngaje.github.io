@@ -46,4 +46,10 @@ Y : 가상 키보드 종료
 ### 툴체인에서 빌드하는 방법 (소스는 추후 공유 예정입니다.)
     git update
     apt install libsdl-net1.2-dev:armhf
+    git clone -b sdl2_ogs https://github.com/trngaje/sparrow3d-sdl2-ogs.git
+    cd sparrow3d-sdl2-ogs
+    make TARGET=miyoomini
+    
+    git clone -b sdl2_ogs https://github.com/trngaje/glutexto-sdl2-ogs.git
+    cd glutexto-sdl2-ogs
     make TARGET=miyoomini
