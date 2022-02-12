@@ -43,7 +43,7 @@ Y : 가상 키보드 종료
 (화면 상에 표시되는 문구가 일부 잘못 표기되어 있을 수 있습니다.)
 
   
-### 툴체인에서 빌드하는 방법 (소스는 추후 공유 예정입니다.)
+### 툴체인에서 빌드하는 방법
     git update
     apt install libsdl-net1.2-dev:armhf
     git clone -b sdl2_ogs https://github.com/trngaje/sparrow3d-sdl2-ogs.git
