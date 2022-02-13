@@ -1,6 +1,7 @@
 ---
 layout: posts
 title:  "miyoo-mini glutexto 한글 버젼 적용"
+comments: true 
 ---
 
 ### 미리 빌드된 자료 이용하여 기기에 설치하는 방법
