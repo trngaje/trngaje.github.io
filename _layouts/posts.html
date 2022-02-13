@@ -5,7 +5,9 @@ layout: archive
 {{ content }}
 
 {% if page.comments %}
+<div id="post-disqus" class="container">
   {% include disqus.html %}
+</div>
 {% endif %}
 
 <ul class="taxonomy__index">
