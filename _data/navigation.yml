@@ -1,9 +1,9 @@
 # main links
 main:
   \- title: "Home"
-    url: https://brush-up.github.io/
+    url: https://trngaje.github.io/
   \- title: "Category"
-    url: https://brush-up.github.io/categories/  
+    url: https://trngaje.github.io/categories/  
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
