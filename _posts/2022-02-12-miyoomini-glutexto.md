@@ -54,3 +54,9 @@ Y : 가상 키보드 종료
     
     cd glutexto-sdl2-ogs
     make TARGET=miyoomini
+
+
+
+{% if page.comments %}
+  {% include disqus.html %}
+{% endif %}
