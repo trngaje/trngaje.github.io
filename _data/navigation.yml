@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Home"
-    url: https://trngaje.github.io/
-  - title: "Category"
-    url: https://trngaje.github.io/categories/  
+  #- title: "Home"
+  #  url: https://trngaje.github.io/
+  #- title: "Category"
+  #  url: https://trngaje.github.io/categories/  
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
