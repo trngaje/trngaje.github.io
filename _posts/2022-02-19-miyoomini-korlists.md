@@ -62,7 +62,13 @@ gamelist.xml 파일에서 아래 정보의 경로는 중요하니 대소문자 �
 		<releasedate>1986</releasedate>
 		<desc />
 	</game>
-	
+
+### gamelist.xml 입수는
+
+텐타클 팀이 작업한 gamelist.xml 파일은 아래 링크에서 받을 수 있습니다.
+[https://github.com/losernator/romlistkr 링크](https://github.com/losernator/romlistkr)
+
+
 ### 한글 리스트 구동 화면
 
 ![](/images/2022-02-19/miyoo_mini_kor_list_1.png)
