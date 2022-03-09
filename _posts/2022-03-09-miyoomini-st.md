@@ -27,7 +27,8 @@ retroarch rgui 영어 폰트와 갈무리 한글 폰트를 사용하여 수정 �
 
 ### 툴체인에서 빌드하는 방법
 
-( 추후 git 소스에 올린 후 내용 업데이트 예정입니다 )
+    git clone -b kor https://github.com/trngaje/st-sdl.git
+    make
 
 
 ### 라이센스
