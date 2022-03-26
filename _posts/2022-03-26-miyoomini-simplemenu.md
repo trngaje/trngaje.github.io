@@ -25,7 +25,7 @@ shauninman 이 작성한 custom sdl1.2 기준으로 작업되었으며 생산자
 
 > R 버튼을 누르면 전체 스냅화면으로 표시된다.
 
-![](/images/2022-03-26/simplemenu_emul_2.png)
+![](/images/2022-03-26/simplemenu_emul_fullscreen.png)
 
 > select 버튼을 누르면 좌우 버튼 으로 에뮬레이터를 선택할 수 있다.
 
