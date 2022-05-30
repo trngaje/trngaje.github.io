@@ -61,3 +61,36 @@ hocoslamfy.fgl과 /snap  폴더를 SD card의 .simplemenu/games/ 에 복사합�
     
     git clone -b miyoomini https://github.com/trngaje/hocoslamfy.git
     make platform=miyoomini
+
+### oga 기기에서 빌드하는 방법
+    
+    git clone -b sdl2 https://github.com/trngaje/hocoslamfy.git
+    make platform=sdl2
+    
+> 소스는 키보드만 처리할 수 있기 때문에 조이스틱 입력은 xboxdrv를 사용해서 변환해 주어야 합니다.
+
+
+    #!/bin/bash
+    cd ~/develop/hocoslamfy
+    sudo /home/odroid/util/xboxdrv/xboxdrv \
+    --evdev /dev/input/event2 \
+    --evdev-no-grab \
+    --silent \
+    --quiet \
+    --detach-kernel-driver \
+    --force-feedback \
+    --deadzone-trigger 30% \
+    --deadzone 30% \
+    --mimic-xpad \
+    --evdev-keymap BTN_EAST=a,BTN_SOUTH=b,BTN_NORTH=x,BTN_WEST=y,BTN_TL=lb,BTN_TR=rb,BTN_TL2=tl,BTN_TR2=tr,BTN_TRIGGER_HAPPY3=back,BTN_TRIGGER_HAPPY4=start \
+    --evdev-absmap ABS_X=dpad_x,ABS_Y=dpad_y,ABS_RX=x2,ABS_RY=y2 \
+    --evdev-absmap ABS_HAT0X=dpad_x,ABS_HAT0Y=dpad_y \
+    --ui-buttonmap a=KEY_SPACE,b=KEY_LEFTCTRL,y=KEY_LEFTALT,x=KEY_LEFTSHIFT,lb=KEY_E,rb=KEY_T,tl=KEY_TAB,tr=KEY_BACKSPACE \
+    --ui-buttonmap back=KEY_RIGHTCTRL,start=KEY_ENTER,back+start=KEY_ESC \
+    --ui-buttonmap du=KEY_UP,dd=KEY_DOWN,dl=KEY_LEFT,dr=KEY_RIGHT \
+    &
+
+    ./hocoslamfy
+
+    sudo killall xboxdrv
+
