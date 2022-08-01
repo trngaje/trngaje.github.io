@@ -1,17 +1,19 @@
 ---
 layout: posts
 title:  "miyoo-mini Wizznic 적용"
+categories : [miyoomini]
+tags : [miyoomini]
 ---
 
 ### 미리 빌드된 자료 이용하여 기기에 설치하는 방법
 
-- 아래 링크의 wizznic.zip 압축을 풀고 
+- 아래 링크의 wizznic.zip 압축을 풀고
 
 [https://github.com/trngaje/miyoo-mini/releases/tag/port_wizznic_v1.0 링크](https://github.com/trngaje/miyoo-mini/releases/tag/port_wizznic_v1.0)
 
 - wizznic 폴더는 /App/ 폴더 밑에 복사 합니다.
 
-  
+
 ### 툴체인에서 빌드하는 방법
 
 ( 추후 git 소스에 올린 후 내용 업데이트 예정입니다 )
@@ -28,7 +30,7 @@ title:  "miyoo-mini Wizznic 적용"
 ![](/images/2022-02-19/miyoo_mini_wizznic_2.png)
 
 
-> 옵션 선택화면 
+> 옵션 선택화면
 
 ![](/images/2022-02-19/miyoo_mini_wizznic_3.png)
 

@@ -1,6 +1,8 @@
 ---
 layout: posts
 title:  "miyoo-mini gmu 한글 적용"
+categories : [miyoomini]
+tags : [miyoomini]
 ---
 
 ### 개요
@@ -23,7 +25,7 @@ Start 키를 눌러 표시 화면을 바꿉니다.
 
 Menu 키를 누르면 Menu 키를 함께 눌렀을 때의 기능 설명이 표시됩니다.
 
-Menu + Start 키를 같이 누르면 Gmu 가 종료됩니다. 
+Menu + Start 키를 같이 누르면 Gmu 가 종료됩니다.
 
 ![](/images/2022-05-01/gmu_filelist.png)
 
@@ -63,7 +65,7 @@ theme.conf 에 정의되어 있는 파일을 사용합니다.
 [https://cafe.naver.com/moopung/92112](https://cafe.naver.com/moopung/92112)
 > 1.제조사 이미지에서는..
 
-아래 압축파일(gmu220501.zip)을 다운로드 받은 후 SD Card의 App 폴더에 Gmu 폴더를 복사합니다. 
+아래 압축파일(gmu220501.zip)을 다운로드 받은 후 SD Card의 App 폴더에 Gmu 폴더를 복사합니다.
 
 
 > 2.simplemenu 이미지에서는
@@ -80,7 +82,7 @@ Gmu 폴더를 임의의 폴더에 복사하고 싶으면 gmu.fgl 에서 경로�
 
 
 ### 툴체인에서 빌드하는 방법
-    
+
     git clone -b kor https://github.com/trngaje/gmu.git
     apt install libwavpack-dev:armhf
     ./build_miyoo.sh

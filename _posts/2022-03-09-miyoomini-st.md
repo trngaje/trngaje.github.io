@@ -1,6 +1,8 @@
 ---
 layout: posts
 title:  "miyoo-mini st 적용"
+categories : [miyoomini]
+tags : [miyoomini]
 ---
 
 ### 개요

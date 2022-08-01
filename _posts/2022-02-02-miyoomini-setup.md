@@ -1,6 +1,8 @@
 ---
 layout: posts
 title:  "미유 미니 spec 및 개발을 위한 환경 설정"
+categories : [miyoomini]
+tags : [miyoomini]
 ---
 
 ### 제품 스펙
@@ -38,17 +40,17 @@ title:  "미유 미니 spec 및 개발을 위한 환경 설정"
         CC          = $(TOOLCHAIN)gcc
         CCP         = $(TOOLCHAIN)g++
         LD          = $(TOOLCHAIN)gcc
-    
+
 configure 로 Makefile을 생성할 수 있는 경우에는 아래와 같이 설정 한다.
 
     ./configure --host=arm-linux-gnueabihf
-    
+
 - build 후 생성된 파일이 arm 용인지 확인 할 것 (개별 설정을 하지 않으면 x86 format으로 생성이 됩니다.)
     아래와 같이 한번더 확인해 준다.
 
         file <생성된 파일>
         readelf -d <생성된 파일>
- 
+
 ### miyoo mini 관련 홈페이지
 
 [미유미니관련홈페이지](https://github.com/TriForceX/MiyooCFW/wiki/Miyoo-Mini)

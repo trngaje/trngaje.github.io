@@ -1,11 +1,13 @@
 ---
 layout: posts
 title:  "port게임 zelda picross 한글 버젼 적용"
+categories : [miyoomini]
+tags : [miyoomini]
 ---
 
 ### 미리 빌드된 자료 이용하여 기기에 설치하는 방법 (miyoo mini 한정)
 
-- 아래 링크의 zeldapicross.zip 압축을 풀고 
+- 아래 링크의 zeldapicross.zip 압축을 풀고
 
 [https://github.com/trngaje/miyoo-mini/releases/tag/port_zeldapicrossv0.6](https://github.com/trngaje/miyoo-mini/releases/tag/port_zeldapicrossv0.6)
 
@@ -13,7 +15,7 @@ title:  "port게임 zelda picross 한글 버젼 적용"
 - 필요한 library 가 있으면 /miyoo/lib/ 밑에 복사한다.
 
   (추후 필요한 파일은 정리해서 올릴 예정입니다.)
-  
+
 ### 툴체인에서 빌드하는 방법
 
 - SDL2.0 환경 (ogs,oga,rk2020)

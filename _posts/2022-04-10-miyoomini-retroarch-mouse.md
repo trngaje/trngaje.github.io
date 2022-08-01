@@ -1,6 +1,8 @@
 ---
 layout: posts
 title:  "miyoo-mini retroarch 마우스 메세지 생성"
+categories : [miyoomini]
+tags : [miyoomini]
 ---
 
 ### 개요
@@ -83,22 +85,21 @@ dosbox 에서 마우스 커서를 움직이기 위해서 미유미니는 버튼 
 > 마우스 모드일때(toggle_mouse) 마우스 값 전달
 
       case RETRO_DEVICE_MOUSE:
-      case RARCH_DEVICE_MOUSE_SCREEN: 
-         if(toggle_mouse == 1) 
+      case RARCH_DEVICE_MOUSE_SCREEN:
+         if(toggle_mouse == 1)
          {
             switch (id)
             {
 
                case RETRO_DEVICE_ID_MOUSE_LEFT:
-                  return sdlmouse.mouse_l; 
+                  return sdlmouse.mouse_l;
                case RETRO_DEVICE_ID_MOUSE_RIGHT:
-                  return sdlmouse.mouse_r; 
+                  return sdlmouse.mouse_r;
 
                case RETRO_DEVICE_ID_MOUSE_X:
                   return sdlmouse.mouse_x;
                case RETRO_DEVICE_ID_MOUSE_Y:
-                  return sdlmouse.mouse_y; 
+                  return sdlmouse.mouse_y;
             }
          }
          break;
-        

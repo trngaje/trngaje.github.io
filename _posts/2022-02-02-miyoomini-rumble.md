@@ -1,6 +1,8 @@
 ---
 layout: posts
 title:  "miyoo-mini rumble motor 제어 방법"
+categories : [miyoomini]
+tags : [miyoomini]
 ---
 
 ### 기술 관련 전문 (motor 테스트 앱에 포함되어 있는 pdf 에 적혀 있는 내용을 내마음 대로 번역해 보았습니다.)
@@ -32,7 +34,7 @@ Stu changed 35R to 1R (the smaller the resistance, the stronger the vibration).
 
 Stu 는 얼마간 미유 미니 시스템을 살펴보았지만 진동 모터를 제어할 방법을 찾을 수 없었다.
 
-나는 플레이스테이션 에뮬레이터에서 진동을 지원한다는 것을 알아냈고 리버스엔지니어링을 해보니 Miyu Mini 가 GPIO 48 진동 모터 제어 신호를 사용하고 있음을 알아냈다. 
+나는 플레이스테이션 에뮬레이터에서 진동을 지원한다는 것을 알아냈고 리버스엔지니어링을 해보니 Miyu Mini 가 GPIO 48 진동 모터 제어 신호를 사용하고 있음을 알아냈다.
 
 
 Stu spent some time looking at the Miyo Mini system, but couldn't find a way to control the vibration motor.
@@ -57,14 +59,14 @@ Control methods are as follows:
 src/platform/libretro/libretro.c:
 진동 모터를 돌릴 때
 
-    system("echo 48 > /sys/class/gpio/export");	
-    system("echo out > /sys/class/gpio/gpio48/direction");	
-    system("echo 0 > /sys/class/gpio/gpio48/value");	
+    system("echo 48 > /sys/class/gpio/export");
+    system("echo out > /sys/class/gpio/gpio48/direction");
+    system("echo 0 > /sys/class/gpio/gpio48/value");
 
 진동 모터를 멈출 때
 
-    system("echo 1 > /sys/class/gpio/gpio48/value");	
-    system("echo 48 > /sys/class/gpio/unexport");	
+    system("echo 1 > /sys/class/gpio/gpio48/value");
+    system("echo 48 > /sys/class/gpio/unexport");
 
 ### 향후 개선 필요한 부분
 - mgba 코어에서 on / off 명령어가 반복적으로 나가지 않도록 수정함
@@ -76,4 +78,3 @@ src/platform/libretro/libretro.c:
  - Emu 폴더 내에 있는 개조 버전 레트로아크 (ra32.ss)는 진동 기능을 지원하지 않기 때문에 여기서 진동 기능을 사용하려면 기능 적용된 코어를 선택해야 함
  - RApp 폴더 내에 있는 개조 버전 레트로아크 (retroarch)는 진동 기능을 자체 지원하기 때문에 진동 코드가 적용되지 않은 코어를 선택하면 됨
    단 libretro 에서 배포되는 retroarch 소스를 바로 적용해서는 미유 미니에서 구동은 불가능 하며 현재 소스는 오픈되어 있지 않음
-   

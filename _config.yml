@@ -289,8 +289,10 @@ defaults:
       share: true
       related: true
 
-# Disqus 
+# Disqus
 discus-identifier: trngaje-github-io # add your discus identifier
 
 # Ko-fi
 kofi_username : trngaje
+
+category_list: [ 3ds, miyoomini ]

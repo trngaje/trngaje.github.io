@@ -1,6 +1,8 @@
 ---
 layout: posts
 title:  "miyoo-mini hocoslamfy 적용"
+categories : [miyoomini]
+tags : [miyoomini]
 ---
 
 ### 개요
@@ -47,7 +49,7 @@ A,B,X,Y : 벌을 위로 날개짓
 
 > 1.제조사 이미지에서는..
 
-위 경로에서 압축파일(hocoslamfy_220527_1.zip)을 다운로드 받은 후 SD Card의 App 폴더에 hocoslamfy 폴더를 복사합니다. 
+위 경로에서 압축파일(hocoslamfy_220527_1.zip)을 다운로드 받은 후 SD Card의 App 폴더에 hocoslamfy 폴더를 복사합니다.
 
 
 > 2.simplemenu 이미지에서는
@@ -58,15 +60,15 @@ hocoslamfy.fgl과 /snap  폴더를 SD card의 .simplemenu/games/ 에 복사합�
 
 
 ### 미유미니 툴체인에서 빌드하는 방법
-    
+
     git clone -b miyoomini https://github.com/trngaje/hocoslamfy.git
     make platform=miyoomini
 
 ### oga 기기에서 빌드하는 방법
-    
+
     git clone -b sdl2 https://github.com/trngaje/hocoslamfy.git
     make platform=sdl2
-    
+
 > 소스는 키보드만 처리할 수 있기 때문에 조이스틱 입력은 xboxdrv를 사용해서 변환해 주어야 합니다.
 
 
@@ -93,4 +95,3 @@ hocoslamfy.fgl과 /snap  폴더를 SD card의 .simplemenu/games/ 에 복사합�
     ./hocoslamfy
 
     sudo killall xboxdrv
-
