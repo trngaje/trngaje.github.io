@@ -2,8 +2,6 @@
 main:
   - title: "Category"
     url: "/category/"
-  - title: "후원 (Ko-fi)"
-    url: https://ko-fi.com/trngaje
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
