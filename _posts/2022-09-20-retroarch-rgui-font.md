@@ -67,3 +67,11 @@ It can be generated simply as follows.
 Please refer to the location below for the code to build.
 
 https://github.com/trngaje/png2c
+
+
+You can download prebuilt images for Windows from the path below.
+https://github.com/trngaje/png2c/releases/tag/windows_64bit_png2c_220924
+
+unzip windows_64bit_png2c_prebuild_220924.zip
+
+    png2c.exe bitmap_cyrillic.png
