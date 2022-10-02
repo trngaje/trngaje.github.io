@@ -108,4 +108,50 @@ hangul.lng 파일내 문구 추가
 
 ### advmame.rc 와 연동
 
-추후 업데이트 예정입니다. 
+advmame.rc 에서 항목 추가
+
+    autofire_delay 8
+
+추가한 함수 emu.h
+
+    int get_autofire_delay(void);
+    void set_autofire_delay(int delay);
+
+추가한 함수 input.c
+
+    int get_autofire_delay(void)
+    {
+    	struct advance_input_context* context = &CONTEXT.input;
+    	return context->config.autofire_delay;
+    }
+
+    void set_autofire_delay(int delay)
+    {
+    	struct advance_input_context* context = &CONTEXT.input;
+    	context->config.autofire_delay = delay;
+
+    	adv_conf* cfg_context = CONTEXT.cfg;
+    	conf_int_set_if_different(cfg_context, "", "autofire_delay", context->config.autofire_delay);
+    }
+
+`conf_int_set_if_different(cfg_context, "", "autofire_delay", context->config.autofire_delay);` 할 때 default 값과 같으면 advmame.rc 에서 해당 항목이 삭제된다. 그외의 값은 변경된 값으로 advmame.rc 값이 갱신 됩니다.
+- 참고 ) conf_int_register_default(cfg_context, "autofire_delay", 10);
+
+
+    adv_error advance_input_init(struct advance_input_context* context, adv_conf* cfg_context)
+    {
+    ...
+
+	    conf_int_register_default(cfg_context, "autofire_delay", 10);
+
+
+    adv_error advance_input_config_load(struct advance_input_context* context, adv_conf* cfg_context)
+    {
+    ...
+
+  	  context->config.autofire_delay = conf_int_get_default(cfg_context, "autofire_delay");
+
+
+### 변경된 소스 및 빌드 방법
+
+git clone https://github.com/trngaje/advancemame.git
