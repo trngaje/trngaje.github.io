@@ -58,6 +58,21 @@ sudo 입력 시 암호 입력하지 않도록 수정
 sudo graphics 1 수행 후에는 발생하지 않음 (단 미리 설정하거나 그래픽 표출되기 전에 하면 효과가 없음)
 After=go4.service 추가
 
+sudo systemctl disable go4.service
+
+커서 표시
+.profile 에 아래 구문 추가 할 것
+(참고 : https://www.emacswiki.org/emacs/CursorOnLinuxConsole)
+
+    if [ $TERM = 'linux' -a $SHELL == '/bin/bash' ] ; then
+        echo -e '\033[?17;0;64c'
+    fi
+
+sudo chsh -s /bin/bash odroid
+
+주의:.profile 에서 실행시 bg (&) 로 실행하면 stdin 을 shell이 가져간다.
+
+
 ### runcommand 설치
 
 https://github.com/trngaje/attract_9pconfig.git
