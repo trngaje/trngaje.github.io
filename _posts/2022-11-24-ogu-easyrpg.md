@@ -10,5 +10,5 @@ easyrpg standalone 사용방법
 
 https://easyrpg.org/player/manual/
 
-easyrpg-player --project-path *.zip
-$ ./easyrpg-player --project-path /mnt/sdcard/roms/easyrpg/ib_ko.zip
+    easyrpg-player --project-path *.zip
+    $ ./easyrpg-player --project-path /mnt/sdcard/roms/easyrpg/ib_ko.zip

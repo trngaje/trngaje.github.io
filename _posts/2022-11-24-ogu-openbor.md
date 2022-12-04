@@ -10,7 +10,8 @@ tags : [ogu,odroid go ultra,오드로이드,openbor]
     git clone https://github.com/DCurrent/openbor
 
 아래는 빌드에러가 있으니 적용하지 말 것
-patch -p1 < 001openbor-Fix-build-on-modern-systems.patch  
+
+    patch -p1 < 001openbor-Fix-build-on-modern-systems.patch  
 
 아래만 적용해 본다.
 
