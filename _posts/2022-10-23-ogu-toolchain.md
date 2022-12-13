@@ -7,8 +7,15 @@ tags : [ogu,odroid go ultra,오드로이드,toolchain]
 ---
 
 pc 환경에서 ogu 소스를 빌드하기 위해서는 toolchain을 설치해야 합니다.
+pc에서 빌드해야 하는 소스는 linux kernel과 uboot 이 있습니다.
 
 https://wiki.odroid.com/odroid_go_ultra/software/building_kernel
+
+https://wiki.odroid.com/odroid_go_ultra/software/building_u-boot
+
+pc 환경이라고는 해도 cross compile 설치를 위해서 docker로 구성하는게 편합니다.
+
+
 
     sudo apt-get update
     $ sudo apt-get install git lzop build-essential gcc bc libncurses5-dev libc6-i386 lib32stdc++6
