@@ -65,6 +65,7 @@ ogs 와 동일한 방법으로 변경합니다.
     #include "meson64_gou_joypad.dtsi"
 
 아래와 같이 hat 값으로 변경 합니다.
+
                     sw1 {
                             gpios = <&gpio GPIOX_0 GPIO_ACTIVE_LOW>;
                             label = "GPIO DPAD-UP";
@@ -115,3 +116,20 @@ ogs 와 동일한 방법으로 변경합니다.
 
     $ sudo mount /dev/sdb2 ./mount
     $ sudo make modules_install ARCH=arm64 INSTALL_MOD_PATH=./mount && sync && sudo umount ./mount
+
+
+evtest 결과
+
+    Event: time 1670771528.364124, type 3 (EV_ABS), code 16 (ABS_HAT0X), value -1
+    Event: time 1670771528.364124, -------------- SYN_REPORT ------------
+    Event: time 1670771528.536117, type 3 (EV_ABS), code 16 (ABS_HAT0X), value 0
+    Event: time 1670771528.536117, -------------- SYN_REPORT ------------
+    Event: time 1670771529.916132, type 3 (EV_ABS), code 16 (ABS_HAT0X), value 1
+    Event: time 1670771529.916132, -------------- SYN_REPORT ------------
+    Event: time 1670771530.076151, type 3 (EV_ABS), code 16 (ABS_HAT0X), value 0
+    Event: time 1670771530.076151, -------------- SYN_REPORT ------------
+    Event: time 1670771530.796115, type 3 (EV_ABS), code 17 (ABS_HAT0Y), value -1
+    Event: time 1670771530.796115, -------------- SYN_REPORT ------------
+    Event: time 1670771530.928244, type 3 (EV_ABS), code 17 (ABS_HAT0Y), value 0
+    Event: time 1670771530.928244, -------------- SYN_REPORT ------------
+    Event: time 1670771531.616121, type 3 (EV_ABS), code 17 (ABS_HAT0Y), value 1
