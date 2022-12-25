@@ -15,7 +15,7 @@ tags : [ogu,odroid go ultra,오드로이드,attractmode]
     mkdir build
     cd build
 
-    cmake .. -DSFML_RPI=1 -DSFML_OS_LINUX=1 -DSFML_OPENGL_ES=1 -DEGL_INCLUDE_DIR=/usr/include -DEGL_LIBRARY=/usr/lib/aarch64-linux-gnu/libEGL.so -DGLES_INCLUDE_DIR=/usr/include -DGLES_LIBRARY=/usr/lib/aarch64-linux-gnu/libGLESv2.so
+    cmake .. -DSFML_RPI=1 -DSFML_OS_LINUX=1 -DSFML_OPENGL_ES=1 -DEGL_INCLUDE_DIR=/usr/include -DEGL_LIBRARY=/usr/local/lib/aarch64-linux-gnu/libEGL.so -DGLES_INCLUDE_DIR=/usr/include -DGLES_LIBRARY=/usr/local/lib/aarch64-linux-gnu/libGLESv2.so
 
     make -j4
     sudo make install

@@ -16,15 +16,13 @@ https://wiki.odroid.com/odroid_go_ultra/software/building_u-boot
 pc 환경이라고는 해도 cross compile 설치를 위해서 docker로 구성하는게 편합니다.
 
 
+    $ git clone --depth 1 https://github.com/hardkernel/linux.git -b odroidgoU-4.9.y
+    $ cd linux
+    $ make odroidgou_defconfig
+    $ make -j$(expr $(expr $(nproc) \* 6) \/ 5)
 
-    sudo apt-get update
-    $ sudo apt-get install git lzop build-essential gcc bc libncurses5-dev libc6-i386 lib32stdc++6
 
-아래는 검색이 안됨
-zlib1g:i386
-
-    sudo mkdir -p /opt/toolchains
-    $ sudo tar Jxvf gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu.tar.xz -C /opt/toolchains/
+### mame build
 
     export ARCH=arm64
     export CROSS_COMPILE=aarch64-linux-gnu-
