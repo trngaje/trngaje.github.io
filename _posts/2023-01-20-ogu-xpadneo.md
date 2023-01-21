@@ -34,6 +34,7 @@ xpadneo 를 우선 빌드 합니다.
     drivers/hid/hid-core.c: hid_err(parser->device, "unknown main item tag 0x%x\n", item->tag);
 
 장치 추가
+
 drivers/hid/hid-core.c
 02e0 는 8Bitdo SN30 Pro 장치와 동일합니다.
 
@@ -45,14 +46,15 @@ static const struct hid_device_id hid_have_special_driver[] = {
     { HID_BLUETOOTH_DEVICE(USB_VENDOR_ID_MICROSOFT, 0x02E0) },
 
 문제점:
-1.연결 후 일정 시간 지나면 화면이 꺼지는 증상 있음
-2.첫 연결 시 진동이 계속 울림 disconnect 후 connect 하면 정상 동작함
-3.연결 시 진동 기능 없이 연결되는 경우 있음 (코드 정리 후 이건 더 안 나오는 증상)
-4.8Bito SN30 Pro 외에 의미 없는 event5,6이 같이 생성됨
 
-    /dev/input/event4:      8Bitdo SN30 Pro
-    /dev/input/event5:      8Bitdo SN30 Pro Consumer Control
-    /dev/input/event6:      8Bitdo SN30 Pro Keyboard
+1. 연결 후 일정 시간 지나면 화면이 꺼지는 증상 있음
+2. 첫 연결 시 진동이 계속 울림 disconnect 후 connect 하면 정상 동작함
+3. 연결 시 진동 기능 없이 연결되는 경우 있음 (코드 정리 후 이건 더 안 나오는 증상)
+4. 8Bito SN30 Pro 외에 의미 없는 event5,6이 같이 생성됨
+
+        /dev/input/event4:      8Bitdo SN30 Pro
+        /dev/input/event5:      8Bitdo SN30 Pro Consumer Control
+        /dev/input/event6:      8Bitdo SN30 Pro Keyboard
 
 진동 기능을 갖고 연결되었을 때 dmesg 로그는 아래와 같음
 
