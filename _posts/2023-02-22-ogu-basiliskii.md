@@ -136,8 +136,11 @@ machintosh emulator 인 basiliskii 를 ogu에 맞게 빌드 후 사용해 봅니
 
 ### 화면 캡쳐 방법
 
-alt  +shift + 3 or 4 를 눌러 캡쳐 할 수 있음.
-확장 자 없이 파일이 생성되는데 어떻게 파일 변환하는지 아직 모름
+alt  +shift + 3 을 눌러 캡쳐 할 수 있음.
+확장 자 없이 파일이 생성되는데 아래와 같이 변환 가능합니다.
+
+    convert 'Picture 1' games9.png
+
 
 
 ### xboxdrv 로 마우스 및 키보드 키 값 정의
