@@ -17,7 +17,7 @@ tags : [miyoomini]
   (추후 필요한 파일은 정리해서 올릴 예정입니다.)
 
 ### 툴체인에서 빌드하는 방법
-    git update
+    apt update
     apt install  libasound2-dev:armhf libfreetype6-dev:armhf zlib1g-dev:armhf libexpat1-dev:armhf libslang2-dev:armhf libncurses5-dev:armhf
     apt install automake
 
